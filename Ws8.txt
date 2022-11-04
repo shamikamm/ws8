@@ -1,4 +1,4 @@
-Script started on 2022-11-04 00:39:31-04:00
+Script started on 2022-11-01 00:39:31-04:00
 ]0;shamika@sjsu:/mnt/scratch/shamika[shamika@sjsu shamika]$ git init
 [33mhint: Using 'master' as the name for the initial branch. This default branch name[m
 [33mhint: is subject to change. To configure the initial branch name to use in all[m
@@ -20,25 +20,8 @@ amazon_reviews_us_Books_v1_02.tsv  [0m[38;5;33mws8[0m  Ws8.txt
 amazon_reviews_us_Books_v1_02.tsv
 ]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ pwd
 /mnt/scratch/shamika/ws8
-]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ grep -P '\tN\tY\t' amazon_reviews_us_Books_v1_02.tsv > y.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
-]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ grep -P '\tY\tY\t' amazon_reviews_us_Books_v1_02.tsv > y.txt
-]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ ls 
-amazon_reviews_us_Books_v1_02.tsv  y.txt
-]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ head y.txt 
-US	42321535	R2NKNL4WXWIWBG	1400062217	791531418	The Laments: A Novel	Books	4	3	3	Y	Y	Doh! He *almost* made it!	There were times when I was so utterly charmed by this novel, I was grinning. Times when I was reading on the bus and guffawed. It was proving to be a wonderful read...and then (if I really took a good look, I could pinpoint where, but I know it was within the final thirty percent of the book) he lost his way. Or I should say, his editor lost his/her way, let the material get away from Mr Hagen, and as a result, 'The Laments' does not fulfill the incredible potential it had generated up to that point.  <br />What I found most intriguing was that where the novel 'fades' was where Hagen was -to me, at least- attempting to turn things very John Irvingish. And I have to admit that as much as I didn't want to have happen what happened plot-wise for my own sensibilities, I also didn't want the novel to change its tone...and I didn't want him to attempt something that was at variance with the previous 250 or so pages. Because up to that point, the writing had been...well, if I can wax culinary for a moment...like the most delightful sorbet. And with this change in direction (not just in content and style, but intent), suddenly it was a more 'substantial' food, but one with a bitter aftertaste.  <br /> <br />I don't know if it had been his goal to reach for something beyond what he had managed up to this point. But for me, he wasn't successful. Which made the conclusion all the more unsatisfying.  <br /> <br />I applaud his efforts. Perhaps with a better editor, his next novel will attain more of what he's capable of...which, from this writer's point of view, is a lot.	2005-09-12
-]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ awk -F "\t" '{print $12,$14}' y.txt > verified.txt
-]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ ls
-amazon_reviews_us_Books_v1_02.tsv  verified.txt  y.txt
-]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ head verified.txt 
-Y There were times when I was so utterly charmed by this novel, I was grinning. Times when I was reading on the bus and guffawed. It was proving to be a wonderful read...and then (if I really took a good look, I could pinpoint where, but I know it was within the final thirty percent of the book) he lost his way. Or I should say, his editor lost his/her way, let the material get away from Mr Hagen, and as a result, 'The Laments' does not fulfill the incredible potential it had generated up to that point.  <br />What I found most intriguing was that where the novel 'fades' was where Hagen was -to me, at least- attempting to turn things very John Irvingish. And I have to admit that as much as I didn't want to have happen what happened plot-wise for my own sensibilities, I also didn't want the novel to change its tone...and I didn't want him to attempt something that was at variance with the previous 250 or so pages. Because up to that point, the writing had been...well, if I can wax culinary for a moment...like the most delightful sorbet. And with this change in direction (not just in content and style, but intent), suddenly it was a more 'substantial' food, but one with a bitter aftertaste.  <br /> <br />I don't know if it had been his goal to reach for something beyond what he had managed up to this point. But for me, he wasn't successful. Which made the conclusion all the more unsatisfying.  <br /> <br />I applaud his efforts. Perhaps with a better editor, his next novel will attain more of what he's capable of...which, from this writer's point of view, is a lot.
-]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ wc -l verified.txt 
-1 verified.txt
-]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ rm verified.txt 
-]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ grep -P '\tY\tY\t' amazon_reviews_us_Books_v1_02.tsv ?[K|wc
-      1     315    1710
-]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ grep -P '\tN\tY\t' amazon_reviews_us_Books_v1_02.tsv > y.txt [K[K[K[K[K[K[K[K|wc
- 229345 44402549 262426411
-]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ rm y.txt 
+]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
 ]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ grep -P '\tN\tY\t' amazon_reviews_us_Books_v1_02.tsv > y.txt
 ]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ awk -F "\t" '{print $12,$14}' y.txt > verified.txt
 ]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ grep -P '\tN\tN\t' amazon_reviews_us_Books_v1_02.tsv > n.txt
@@ -47,7 +30,7 @@ Y There were times when I was so utterly charmed by this novel, I was grinning. 
 ]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ awk -F "\t" '{print $12,$14}' n.txt > unverified.txt
 ]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ ls
 amazon_reviews_us_Books_v1_02.tsv  n.txt  unverified.txt  verified.txt  y.txt
-]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ heaf [K[Kd n.txt
+]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ head [K[Kd n.txt
 US	12076615	RQ58W7SMO911M	0385730586	122662979	Sisterhood of the Traveling Pants (Book 1)	Books	4	2	3	N	N	this book was a great learning novel!	this boook was a great one that you could learn from. it not only teaches the imponrtance of family and their values but it also deals with basic issues that teens and some kids even deal with.  this book is about 4 best friends who are for the first time in their lives spending their summer apart. one day they are all in one of the girls rooms and finds a pair of pants that were tucked away in her closet.  once all four  of them try them on they realize that there is really something special about these pants.  seeming as how all 4 girls are differnt shapes and sizes and somehow the pants fit all of them,  they realize that these pants were the start of something special.  immediatley following they decided to make up certian rules abut the pants such as you must write the best thing u did while wearing the pants over your summer on the right leg and also some silly things such as to \\"never pick yuor nose while wearing the pants.\\"  this book follows the girls throuh their summers in differnt places of the world and through all of the different obstacles that life takes them through. it can really teach you alot not only about what is going on around you but most imporntantly about yuorself.  i would give this book 4 stars and would reccommend it to anyone who seems the slihgtest bit interested.	2005-10-14
 US	12703090	RF6IUKMGL8SF	0811828964	56191234	The Bad Girl's Guide to Getting What You Want	Books	3	5	5	N	N	Fun Fluff	If you are looking for something to stimulate your brain, this isn't it.  However, if you are just looking for a good laugh, you'll enjoy The Bad Girl's Guide.  It's funny and light, and definitely a good way to pass a little bit of time.	2005-10-14
 US	12257412	R1DOSHH6AI622S	1844161560	253182049	Eisenhorn (A Warhammer 40,000 Omnibus)	Books	4	1	22	N	N	this isn't a review	never read it-a young relative idicated he liked it and somehow my name popped upon this--no more to say	2005-10-14
@@ -65,25 +48,18 @@ bash: syntax error near unexpected token `)'
 ]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ ls
 amazon_reviews_us_Books_v1_02.tsv  n.txt  unverified.txt  unver.txt  verified.txt  ver.txt  y.txt
 ]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ tr -c '[:alnum:]' '[\n*]' < ver.txt |sort | uniq -c | sort -nr | head  -10
-17524310 
+17524310 here
  935952 a
  499000 book
- 437847 br
- 389593 th
- 346114 s
+ 437847 brand
+ 389593 these
+ 346114 sad
  287545 with
  265177 you
  256133 as
- 254228 The
+ 254228 Them
 ]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ tr -c '[:alnum:]' '[\n*]' < unver.txt |sort | uniq -c | sort -nr | head  -10
 
-^C
-]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ tr -c '[:alnum:]' '[\n*]' < unver.txt |sort | uniq -c | sort -nr | head  -10
-^C
-]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ wc unver.txt
-   2876173  332080527 2281554735 unver.txt
-]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ tr -c '[:alnum:]' '[\n*]' < unver.txt |sort | uniq -c | sort -n |tail -19[K0
-^C
 ]0;shamika@sjsu:/mnt/scratch/shamika/ws8[shamika@sjsu ws8]$ exit
 
 Script done on 2022-11-04 01:22:56-04:00
